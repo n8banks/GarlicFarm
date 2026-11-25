@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://d2cewounu4e0j"]
+
+[ext_resource type="Texture2D" uid="uid://b7h1um7la53j7" path="res://Assets/Characters/The_Vamp.png" id="1_mkn0i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6qrnp"]
+size = Vector2(289, 489)
+
+[node name="Node2D" type="Node2D" unique_id=1933549770]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2112187906]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2124631775]
+position = Vector2(144.49998, 244.49998)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_6qrnp")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1407882594]
+texture_filter = 1
+scale = Vector2(10, 10)
+texture = ExtResource("1_mkn0i")
+offset = Vector2(14.5, 24.5)
