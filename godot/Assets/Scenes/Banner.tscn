@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cthp7cheby668"]
+
+[ext_resource type="Texture2D" uid="uid://da2o76d2538fo" path="res://Assets/Textures/Astrum Empire Flag.png" id="1_gt6xk"]
+
+[node name="Node2D" type="Node2D" unique_id=506534328]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=721871766]
+texture_filter = 1
+scale = Vector2(5, 5)
+texture = ExtResource("1_gt6xk")
+offset = Vector2(16, 10)
