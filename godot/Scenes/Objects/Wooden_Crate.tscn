@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dim8vppio81gh"]
+
+[ext_resource type="Texture2D" uid="uid://yhfa03mt1w63" path="res://Assets/Textures/Texture_Wood_Crate.png" id="1_58qt3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6qrnp"]
+size = Vector2(64, 84)
+
+[node name="Wooden_Crate" type="Node2D" unique_id=767871839]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1706846800]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("1_58qt3")
+offset = Vector2(16, 16)
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=975630873]
+texture_filter = 1
+position = Vector2(32, 74)
+scale = Vector2(2, 0.625)
+texture = ExtResource("1_58qt3")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=870277913]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1177351711]
+position = Vector2(32, 42)
+shape = SubResource("RectangleShape2D_6qrnp")
