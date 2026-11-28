@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cb1mvqmntybq"]
+
+[ext_resource type="PackedScene" uid="uid://dim8vppio81gh" path="res://Scenes/Objects/Wooden_Crate.tscn" id="1_i140u"]
+[ext_resource type="Texture2D" uid="uid://cwhxrrh3b7srx" path="res://Assets/Textures/Tile_Wood_Plank_Floor.png" id="1_on6x3"]
+[ext_resource type="PackedScene" uid="uid://d2cewounu4e0j" path="res://Scenes/Characters/The_Vamp.tscn" id="2_on6x3"]
+[ext_resource type="PackedScene" uid="uid://cthp7cheby668" path="res://Scenes/Objects/Banner.tscn" id="3_6hp74"]
+
+[node name="Room 1" type="Node2D" unique_id=638161071]
+
+[node name="TileWoodPlankFloor" type="Sprite2D" parent="." unique_id=709825458]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("1_on6x3")
+offset = Vector2(8, 8)
+
+[node name="Wooden_Crate" parent="." unique_id=767871839 instance=ExtResource("1_i140u")]
+position = Vector2(681, 353)
+
+[node name="Wooden_Crate2" parent="." unique_id=1383296501 instance=ExtResource("1_i140u")]
+position = Vector2(562, 103)
+
+[node name="Wooden_Crate3" parent="." unique_id=95624920 instance=ExtResource("1_i140u")]
+position = Vector2(78, 82)
+
+[node name="The_Vamp" parent="." unique_id=1933549770 instance=ExtResource("2_on6x3")]
+position = Vector2(111, 383)
+
+[node name="Banner" parent="." unique_id=506534328 instance=ExtResource("3_6hp74")]
+position = Vector2(291, 52)
